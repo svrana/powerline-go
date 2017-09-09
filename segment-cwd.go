@@ -99,14 +99,8 @@ func segmentCwd(p *powerline) {
 			if maxDepth <= 0 {
 				warn("Ignoring -cwd-max-depth argument since it's smaller than or equal to 0")
 			} else if len(pathSegments) > maxDepth {
-				var nBefore int
-				if maxDepth > 2 {
-					nBefore = 2
-				} else {
-					nBefore = maxDepth - 1
-				}
-				firstPart := pathSegments[:nBefore]
-				secondPart := pathSegments[len(pathSegments)+nBefore-maxDepth:]
+				var firstPart = make([]pathSegment, 0)
+				secondPart := pathSegments[len(pathSegments)-maxDepth:]
 				pathSegments = append(append(firstPart, pathSegment{
 					path:     ellipsis,
 					ellipsis: true,
