@@ -728,7 +728,7 @@ var themes = map[string]Theme{
 		HomeBg:             31,  // blueish
 		PathFg:             250, // light grey
 		//PathBg:             237, // dark grey
-		PathBg: 241, // med light grey
+		PathBg: 240, // slightly darker grey
 		CwdFg:  254, // nearly-white grey
 		//SeparatorFg: 244,
 		SeparatorFg: 246,
