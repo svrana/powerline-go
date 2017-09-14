@@ -5,9 +5,10 @@ import (
 	"fmt"
 	"strings"
 
-	"golang.org/x/text/width"
 	"os"
 	"strconv"
+
+	"golang.org/x/text/width"
 )
 
 type ShellInfo struct {
@@ -24,6 +25,7 @@ type powerline struct {
 	theme           Theme
 	shellInfo       ShellInfo
 	reset           string
+	bold            string
 	symbolTemplates Symbols
 	priorities      map[string]int
 	ignoreRepos     map[string]bool
@@ -37,6 +39,7 @@ func NewPowerline(args args, cwd string, priorities map[string]int) *powerline {
 	p.theme = themes[*args.Theme]
 	p.shellInfo = shellInfos[*args.Shell]
 	p.reset = fmt.Sprintf(p.shellInfo.colorTemplate, "[0m")
+	p.bold = fmt.Sprintf(p.shellInfo.colorTemplate, "[1m")
 	p.symbolTemplates = symbolTemplates[*args.Mode]
 	p.priorities = priorities
 	p.ignoreRepos = make(map[string]bool)

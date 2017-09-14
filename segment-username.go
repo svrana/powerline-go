@@ -8,7 +8,7 @@ import (
 func segmentUser(p *powerline) {
 	var userPrompt string
 	if *p.args.Shell == "bash" {
-		userPrompt = fmt.Sprintf("\\e[1m \\u ")
+		userPrompt = fmt.Sprintf("%s \\u ", p.bold)
 	} else if *p.args.Shell == "zsh" {
 		userPrompt = " %n "
 	} else {
