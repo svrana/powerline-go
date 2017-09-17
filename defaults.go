@@ -92,9 +92,9 @@ var themes = map[string]Theme{
 		DockerMachineFg: 177, // light purple
 		DockerMachineBg: 55,  // purple
 
-		RepoCleanFg: 0,   // black
+		RepoCleanFg: 254, // black
 		RepoCleanBg: 148, // a light green color
-		RepoDirtyFg: 15,  // white
+		RepoDirtyFg: 254, // white
 		RepoDirtyBg: 161, // pink/red
 
 		JobsFg: 39,
@@ -742,10 +742,10 @@ var themes = map[string]Theme{
 		DockerMachineFg: 177, // light purple
 		DockerMachineBg: 55,  // purple
 
-		RepoCleanFg: 0,   // black
-		RepoCleanBg: 148, // a light green color
-		RepoDirtyFg: 15,  // white
-		RepoDirtyBg: 161, // pink/red
+		RepoCleanFg: 250, //
+		RepoCleanBg: 237, // dark gray
+		RepoDirtyFg: 250, // white
+		RepoDirtyBg: 237, //
 
 		JobsFg: 39,
 		JobsBg: 238,
