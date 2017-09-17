@@ -167,9 +167,9 @@ func segmentGit(p *powerline) {
 	}
 
 	p.appendSegment("git-branch", segment{
-		content:    fmt.Sprintf(" %s ", branch),
+		content:    fmt.Sprintf("  %s ", branch),
 		foreground: foreground,
 		background: background,
 	})
-	stats.addToPowerline(p)
+	//stats.addToPowerline(p)
 }
