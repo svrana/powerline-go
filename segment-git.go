@@ -171,5 +171,5 @@ func segmentGit(p *powerline) {
 		foreground: foreground,
 		background: background,
 	})
-	//stats.addToPowerline(p)
+	stats.addToPowerline(p)
 }
