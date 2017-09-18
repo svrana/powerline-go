@@ -32,7 +32,7 @@ func segmentGitLite(p *powerline) {
 	}
 
 	p.appendSegment("git-branch", segment{
-		content:    fmt.Sprintf(" %s ", branch),
+		content:    fmt.Sprintf("  %s ", branch),
 		foreground: p.theme.RepoCleanFg,
 		background: p.theme.RepoCleanBg,
 	})
