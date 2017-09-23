@@ -88,7 +88,7 @@ func (p *powerline) draw() string {
 	shellActualLength := 0
 	if shellMaxLength > 0 {
 		for _, segment := range p.Segments {
-			shellActualLength += len(segment.content) + len(segment.separator)
+			shellActualLength += len(segment.content) + 1
 		}
 		for shellActualLength > shellMaxLength {
 			minPriority := MaxInteger
