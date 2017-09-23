@@ -116,7 +116,7 @@ func main() {
 				"       "),
 		Theme: flag.String("theme", "default",
 			"Set this to the theme you want to use\n"+
-				"    	(valid choices: default, low-contrast)\n"+
+				"    	(valid choices: default, low-contrast, solarized)\n"+
 				"       "),
 		Shell: flag.String("shell", "bash",
 			"Set this to your shell type\n"+
