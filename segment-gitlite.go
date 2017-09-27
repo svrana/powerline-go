@@ -26,13 +26,13 @@ func segmentGitLite(p *powerline) {
 	var branch string
 
 	if status != "HEAD" {
-		branch = status
+		branch = fmt.Sprintf(" %s", status)
 	} else {
 		branch = getGitDetachedBranch(p)
 	}
 
 	p.appendSegment("git-branch", segment{
-		content:    fmt.Sprintf("  %s ", branch),
+		content:    fmt.Sprintf(" %s ", branch),
 		foreground: p.theme.RepoCleanFg,
 		background: p.theme.RepoCleanBg,
 	})
