@@ -102,7 +102,7 @@ func (p *powerline) draw() string {
 			if minPrioritySegmentId != -1 {
 				segment := p.Segments[minPrioritySegmentId]
 				p.Segments = append(p.Segments[:minPrioritySegmentId], p.Segments[minPrioritySegmentId+1:]...)
-				shellActualLength -= len(segment.content) + len(segment.separator)
+				shellActualLength -= len(segment.content) + 1
 			}
 		}
 	}
