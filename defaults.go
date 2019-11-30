@@ -81,14 +81,14 @@ var themes = map[string]Theme{
 	"default": {
 		Reset: 0xFF,
 
-		UsernameFg:     250,
-		UsernameBg:     240,
+		UsernameFg:     15,
+		UsernameBg:     31,
 		UsernameRootBg: 124,
 
 		HostnameFg: 250,
 		HostnameBg: 238,
 
-		HomeSpecialDisplay: true,
+		HomeSpecialDisplay: false,
 		HomeFg:             15,  // white
 		HomeBg:             31,  // blueish
 		AliasFg:            15,  // white
@@ -115,13 +115,13 @@ var themes = map[string]Theme{
 		DotEnvFg: 15, // white
 		DotEnvBg: 55, // purple
 
-		AWSFg: 15, // white
+		AWSFg: 15,  // white
 		AWSBg: 172, // AWS orange
 
-		RepoCleanFg: 0,   // black
-		RepoCleanBg: 148, // a light green color
-		RepoDirtyFg: 15,  // white
-		RepoDirtyBg: 161, // pink/red
+		RepoCleanFg: 250,
+		RepoCleanBg: 240,
+		RepoDirtyFg: 250,
+		RepoDirtyBg: 240,
 
 		JobsFg: 39,
 		JobsBg: 238,
@@ -149,8 +149,8 @@ var themes = map[string]Theme{
 		GitStashedFg:    15,
 		GitStashedBg:    20,
 
-		VirtualEnvFg: 00,
-		VirtualEnvBg: 35, // a mid-tone green
+		VirtualEnvFg: 254,
+		VirtualEnvBg: 74,
 
 		VirtualGoFg: 00,
 		VirtualGoBg: 35,
@@ -792,7 +792,7 @@ var themes = map[string]Theme{
 	"solarized-dark16": {
 		Reset:              8,
 		UsernameFg:         15,
-		UsernameBg:         4,
+		UsernameBg:         31,
 		UsernameRootBg:     1,
 		HostnameFg:         15,
 		HostnameBg:         0,
