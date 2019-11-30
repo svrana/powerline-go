@@ -211,6 +211,9 @@ func (p *powerline) truncateRow(rowNum int) {
 }
 
 func (p *powerline) numEastAsianRunes(segmentContent *string) int {
+	// getting tripped up on git branch symbol
+	return 0
+
 	if *p.args.EastAsianWidth {
 		return 0
 	}

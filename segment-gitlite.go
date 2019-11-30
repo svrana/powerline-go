@@ -1,6 +1,7 @@
 package main
 
 import (
+	"fmt"
 	"strings"
 )
 
@@ -25,7 +26,7 @@ func segmentGitLite(p *powerline) {
 	var branch string
 
 	if status != "HEAD" {
-		branch = status
+		branch = fmt.Sprintf(" %s", status)
 	} else {
 		branch = getGitDetachedBranch(p)
 	}
